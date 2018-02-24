@@ -40,30 +40,15 @@ body.index a.index, body.portfolio a.portfolio, body.contact a.contact {
     text-align: center;
     float: left;
 }
-.wrapper { 
-    width: 960px;
-    height: 2000px;
-    margin: 0 auto;
-    position: relative;
-    top: 100px;
+.container { 
+    margin: 100px auto 160px;
+    max-width: 980px;
 }
 .content { 
-    background-color: #fff;
-    width: 626px;
-    float: left;
-    border: 2px black solid;
-    padding: 10px;
-    position: relative;
-}
-.connect { 
-    background-color: #fff;
-    width:246px;
-    border: 2px black solid;
-    float: left;
-    position: relative;
-    margin-left: 30px;
-    padding: 10px;
-    text-align: center; 
+    background-color: #FFF;
+    border: 2px black solid!important;
+    margin: 10px 5px;
+    padding: 20px;
 }
 .footer {
     position: fixed;
@@ -111,13 +96,15 @@ h2 {
 
 /* Links styling */
 .imagelinks { 
-    width:50px;
+    float: left;
+    width: 90%;
     opacity: 1;
-    height: auto;
+    transition: .5s; /* Animation */
 }
 .imagelinks:hover {
+    transition: .5s; /* Animation */
     opacity: 0.3;
-    background-color: darkcyan;
+    border-radius: 50%;
 }
 a {
     text-decoration: none;
@@ -226,7 +213,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     /* For mobile phones: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -257,6 +244,21 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     .col-m-12 {width: 100%;}
 }
 @media screen and (max-width: 980px) {
+    /* For desktop: */
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
+@media screen and (max-width: 1500px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
