@@ -26,11 +26,6 @@ body {
     top: 0px;
     background-color: #7d88c7;
 }
-.empty {
-    width: 15%;
-    height: 80px;
-    float: left;
-}
 .toplinks {
     padding: 30px;
     text-align: center;
@@ -46,15 +41,16 @@ body {
     border: 2px black solid!important;
     margin: 10px 5px;
     padding: 20px;
-    width: 58.33%;
+    width: 55%;
+    height: auto;
 }
 .connect { 
     float: left;
     background-color: #FFF;
     border: 2px black solid!important;
-    margin: 10px 5px;
+    margin: 10px 30px;
     padding: 20px;
-    width: 33.33%;
+    width: 30%;
 }
 .footer {
     position: fixed;
@@ -155,6 +151,7 @@ a:hover {
 #biopic { 
     margin: 10px 20px 0px 20px; 
     float: left;
+    width: 30%;
     box-shadow: 5px 5px #657397;
 }
 
@@ -221,33 +218,37 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 @media screen and (max-width: 640px) {
     /* For mobile phones: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+    .header {
+        position: static;
+    }
+    .container { 
+        margin: 0px auto;
+        width: 100%;
+    }
+    .content .connect {
+        width: 100%;
+        float: none;
+        margin: 0px auto;
+    }
+    #biopic {
+        width: 100%;
+        float: none;
+    }
 }
 @media screen and (max-width: 768px) {
     /* For tablets: */
-    .col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
-    .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
-    .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;}
-    .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
-    .col-m-12 {width: 100%;}
+    .header {
+        position: static;
+    }
+    .container { 
+        margin: 0px auto;
+        width: 100%;
+    }
+    .content .connect {
+        width: 100%;
+        float: none;
+        margin: 0px auto;
+    }
 }
 @media screen and (max-width: 980px) {
     /* For desktop: */
